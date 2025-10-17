@@ -1,5 +1,5 @@
 build/
-program
+runtests
 *.o
 *.exe
 *.out

@@ -3,7 +3,7 @@ SRCS = $(wildcard src/*.c)
 OBJS := $(SRCS:.c=.o)
 OBJS := $(addprefix $(BUILDDIR)/, $(OBJS))
 
-program: ${OBJS} 
+runtests: ${OBJS} 
 	gcc -o $@ $^
 
 $(BUILDDIR)/%.o: %.c
@@ -11,4 +11,4 @@ $(BUILDDIR)/%.o: %.c
 	gcc -c $^ -o $@
 
 clean:
-	rm -rf ${BUILDDIR}
+	rm -rf ${BUILDDIR} runtests
