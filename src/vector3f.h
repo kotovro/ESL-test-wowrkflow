@@ -9,7 +9,7 @@ typedef struct {
 
 Vector3f vec_add(Vector3f left, Vector3f right);
 Vector3f vec_sub(Vector3f left, Vector3f right);
-float   vec_dot(Vector3f left, Vector3f right);
+float    vec_dot(Vector3f left, Vector3f right);
 Vector3f vec_cross(Vector3f left, Vector3f right);
 
 #endif
